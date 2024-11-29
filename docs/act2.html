@@ -2,63 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../docs/Css/act2.css">
-    <title>Project</title>
+    <link rel="stylesheet" href="../docs/Css/act1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Website</title>
 </head>
 <body>
-    <div>
-        <nav>
-        <li>
-            <ul><a href="">Home</a></ul>
-            <ul><a href="">About Me</a></ul>
-            <ul><a href="">Email</a></ul>
-            <ul><a href="">Contact</a></ul>
-        </li>
-    </nav>
-            
-    </div>
+    <form action="/submit">
+        <label for="user">Username</label>
+        <input type="text" name="username" placeholder="Enter your name" required><br>
+        <label for="pass">Password</label>
+        <input type="text" name="pass" placeholder="Enter your password" required><br>
  
-    
-    <img src="ryan.jpeg">
-    <div><h1>Ryann Buhayan U.</h1></div> <br>         
-    <div><h2>Bachelor of  Science Information Technology</h2></div>
-    
-    <div>
-        <h3>My account</h3>   
-       <ul>
-          <li>
-      <a href="Ryann U. Buhayan">Facebook</a>
-            </li>
-            <li>
-     <a href="Ryann U. Buhayan">Instagram</a>
-            </li>
-            <li>
-                <a href="r.buhayan003.gmail.com">Email</a>
-            </li>
-        </ul>
-    </div>
-    
-    
-    
- <h3>Experience</h3>   <p>Im experience of creating a system to practice my self to learn more.</p>
-    
-<h3>Course</h3>    <p> I hold a bachelor's degree in information technology from City of Malabon University and aspire to work in software design.</p>
-    
-    
- <h3>Dream</h3>   <p>I strive to create applications that have a real impact.motivated by my passion of using coding to bring imaginative notions to life
-</p>
-    
-    
-    
-    
-    
-    
-   
-<button class="back-button" onclick="window.location.href='../docs/index.html';">Back to Home</button>
+        <textarea name="message" rows="4" cols="6" placeholder="Enter your message" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+            <br>
+            <select name="section">
+                <option>Choose a Section</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+                <option value="e">E</option>
+            </select>
+            
 
-     
-        
-    
+            <fieldset>
+                <legend>Bsit - 3g</legend>
+                
+             
+            </fieldset>
+
+            <datalist id="Username">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+
+            </datalist>
+
+            <div class="container">Content</div>
+            <aside><p>Click the link</p></aside>
+            <section style="font-style: oblique;">
+                <h2>Head</h2>
+                <p>Content</p>
+                <h2>Body</h2>
+                <p>Content</p>
+                <h2>Legs</h2>
+                <p>Content</p>
+            </section>
+
+            <main><h1>Hello User</h1></main>
+            <footer><p>BSIT 3G</p></footer>
+            >
+                <img src="asa" alt="Hello user">
+                <figcaption>Images</figcaption>
+
+            </figcaption>
+
+
+
+
+
+
+
+            <button class="back-button" onclick="window.location.href='../docs/index.html';">Back to Home</button>
+
+    </form>
     
 </body>
 </html>
