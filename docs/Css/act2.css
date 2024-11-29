@@ -1,133 +1,139 @@
-/* General reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and overall page styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
     color: #333;
     line-height: 1.6;
     padding: 20px;
 }
 
-/* Header and navigation */
-nav {
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #333;
-    padding: 10px;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #575757;
-}
-
-/* Image styling */
-img {
+label {
     display: block;
-    margin: 0 auto 20px auto;
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
 }
 
-/* Profile section */
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #333;
-}
-
-h2 {
-    text-align: center;
-    font-size: 1.8em;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Account section */
-h3 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-ul li {
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
     margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
-ul a {
-    text-decoration: none;
-    color: #0066cc;
-    font-size: 1.2em;
-    transition: color 0.3s;
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
 }
 
-ul a:hover {
-    color: #004499;
-}
-
-/* Experience and course section */
-h3, p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-/* Back button */
-.back-button {
+button[type="submit"] {
     display: inline-block;
-    background-color: #007bff;
-    color: white;
+    background-color: #6c757d;
+    color: #fff;
+    padding: 12px 20px;
     border: none;
-    padding: 10px 20px;
-    font-size: 1.1em;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.back-button:hover {
-    background-color: #0056b3;
+button[type="submit"]:hover {
+    background-color: #fff;
+    color: #333;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    nav li {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    .back-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-    }
+button.back-button {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.back-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+legend{
+    color: #fff;
+}
+
+section {
+    margin-top: 20px;
+    color: #fff;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.container {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+aside {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
 }
