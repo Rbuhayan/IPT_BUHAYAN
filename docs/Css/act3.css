@@ -89,21 +89,21 @@ input[type="tel"]:focus {
     margin: 10px 0;
 }
 
-.back-button {
-    background-color: #555555; 
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    font-size: 16px;
+.back-to-home {
+    text-decoration: none; 
+    color: #007bff;
+    font-size: 16px; 
+    font-weight: bold; 
+    padding: 10px 15px; 
+    background-color: #f8f9fa;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-.back-button:hover {
-    background-color: #777777; 
+
+.back-to-home:hover {
+    color: white; 
+    background-color: #0056b3;
 }
 
 @media (max-width: 600px) {
